@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC College of Computer Science</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            color: #222;
+        }
+
+        header {
+            background-color: #173f8a;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        .logo {
+            font-size: 65px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px 5px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8ec5ff;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 25px;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #173f8a;
+        }
+
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .course {
+            background-color: #eaf1ff;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #173f8a;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d2c63;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎓</div>
+    <h1>ABC College of Computer Science</h1>
+    <p>Knowledge • Skills • Success</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#registration">Registration</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to ABC College</h2>
+    <p>
+        Welcome to ABC College of Computer Science.
+        Our college provides quality education and a good learning
+        environment for students.
+    </p>
+</section>
+
+<section id="about">
+    <h2>About College</h2>
+    <p>
+        ABC College is a demo educational institution.
+        We focus on education, technology, practical skills
+        and overall development of students.
+    </p>
+</section>
+
+<section id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="courses">
+
+        <div class="course">
+            <h3>BCS</h3>
+            <p>Bachelor of Computer Science</p>
+        </div>
+
+        <div class="course">
+            <h3>B.Com</h3>
+            <p>Bachelor of Commerce</p>
+        </div>
+
+        <div class="course">
+            <h3>B.A.</h3>
+            <p>Bachelor of Arts</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="registration">
+    <h2>Student Registration</h2>
+
+    <form>
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>BCS</option>
+            <option>B.Com</option>
+            <option>B.A.</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="4" placeholder="Enter your message"></textarea>
+
+        <button type="button" onclick="alert('Registration submitted successfully!')">
+            Submit
+        </button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <p><b>Email:</b> abccollege@example.com</p>
+    <p><b>Phone:</b> 9876543210</p>
+    <p><b>Address:</b> Pune, Maharashtra, India</p>
+</section>
+
+<footer>
+    <p>© 2026 ABC College of Computer Science</p>
+    <p>Demo Mini Project</p>
+</footer>
+
+</body>
+  </html>
